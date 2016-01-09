@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>从现在开始</title>
+    <atom:link href="https://xiaohu89.com/fengzhichu-theme/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://xiaohu89.com/fengzhichu-theme/</link>
+    <description>used by search engines</description>
+    <pubDate>Sat, 09 Jan 2016 23:47:25 +0800</pubDate>
+    
+      <item>
+        <title>Github Pages DNS设置</title>
+        <link>https://xiaohu89.com/fengzhichu-theme/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/fengzhichu-theme/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</guid>
+        <description>&lt;p&gt;经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。&lt;/p&gt;
+
+&lt;p&gt;其实设置很简单呐，只是刚开始的时候我看网上的教程很盲目，得到的信息太混乱了，我现在也就是在3个地方对域名的解析有相关的设置，Godaddy，DNSPOD以及Github上面的CNAME：&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;买一个公网的域名，比如在Godaddy上买一个，一年50块的样子，然后去DNSPOD（一个国内提供DNS服务的提供商）注册一个账户，进DNSPOD账户里面可以看到两个本地的NS记录域名&lt;/li&gt;
+&lt;li&gt;进Godaddy的账户里，把系统默认的NS记录修改为刚刚从DNSPOD得到的那两个NS域名&lt;/li&gt;
+&lt;li&gt;在本地尝试dig username.github.io，可以多dig几次，得到好几个ip地址解析结果&lt;/li&gt;
+&lt;li&gt;进入DNSPOD的设置页面，建两条A记录，把自己买的域名解析到上一步得到的那几个ip地址上&lt;/li&gt;
+&lt;li&gt;进入Github上面静态网页的库里面，在根目录下面创建一个CNAME文件，里面输入买的域名（不带http://和WWW）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/fengzhichu-theme/img/DNSPOD-Set.png&quot; alt=&quot;DNSPOD&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;然后就搞定了。&lt;/p&gt;
+
+&lt;p&gt;具体解析流程应该是 先查询Godaddy的DNS服务器，查询不到然后NS记录查DNSPOD的DNS，DNSPOD反馈Github的ip地址回来，然后尝试使用买到的域名来访问页面，Github服务器得到你的自定义域名后，把页面指向你的静态网页地址，最后一步不知道是怎么实现的，后面再去找机会研究一下。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Dec 2015 22:38:30 +0800</pubDate>
+      </item>
+    
+      <item>
+        <title>Jekyll 安装</title>
+        <link>https://xiaohu89.com/fengzhichu-theme/blog/jekyll-%E5%AE%89%E8%A3%85/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/fengzhichu-theme/blog/jekyll-%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;h1&gt;安装jekyll&lt;/h1&gt;
+
+&lt;h1&gt;&lt;/h1&gt;
+
+&lt;p&gt;发现Pelican的设置太不灵活了，比如我想自定义index页面,但是在执行make html之后，直接生成了一个默认的index，于是准备尝试一下jekyll试试。
+其实jekyll应该就算是Pelican的加强版吧，你看两者的文本编辑语法都是一样基于Markdown的，只是现在大多数人都是用jekyll的了。
+先去zhihu上面搜索了下jekyll的指南，找到了一个中文版的jekyll文档，看起来很不错呀,文档链接:jekyll.bootcss.com
+咱不管用不用，先把它装上再说吧,我果断用apt-get install jekyll下载了一个jekyll
+一运行，马上报错：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1 &lt;/span&gt;  &lt;span class=&quot;ss&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/Ruby200/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rubygems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;core_ext&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kernel_require&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:in&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;require&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cannot&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;such&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yajl&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;yajl&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;LoadError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    
+
+&lt;p&gt;看起来像是ruby的问题，马上用apt-get purge命令把jekyll给卸载了，去jekyll文档里面看到别人安装是用的gem install命令，这个gem看起来是ruby环境里面的安装命令;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1 &lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;
+&lt;span class=&quot;lineno&quot;&gt;2 &lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+    
+
+&lt;p&gt;把ruby的环境装好了&lt;/p&gt;
+
+&lt;p&gt;ruby-v可以看到：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;root@xiaohu-Z7:/home/xiaohu/projects/myblog/github/content/article# ruby -v
+ruby 2.1.2p95 (2014-05-08) [x86_64-linux-gnu]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;再执行gem install jekyll，报错：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ERROR: Could not find a valid gem &amp;#39;jekyll&amp;#39; (&amp;gt;= 0), here is why:
+Unable to download data from https://rubygems.org/ - Errno::ETIMEDOUT: Operation timed out - connect(2) (https://rubygems.org/latest_specs.4.8.gz)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;看起来像是链接镜像服务器失败的样子&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;gem sources -r http://rubygems.org/
+gem sources -a http://ruby.taobao.org
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;把ruby资料的源换成了taobao的镜像，这次安装jekyll成功&lt;/p&gt;
+
+&lt;p&gt;尝试运行jekyll new xxx，报错提示/usr/bin下面找不到jekyll程序，这个挺简单：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;which jekyll
+export PATH=$PATH:/usr/local/bin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;先找到了jekyll程序所在的目录，然后增加了一个环境变量;&lt;/p&gt;
+
+&lt;p&gt;最后成功安装上了jekyll：&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jekyll new xiaohu-site
+root@xiaohu-Z7:/home/xiaohu/blog/xiaohu-site# ls
+about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _sass  _site
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/fengzhichu-theme/img/jekyll.jpg&quot; alt=&quot;Jekyll Logo&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;PS: 写文章的时候，可以用鼠标选中外部窗口的内容，然后回到vim中，按shift+insert（就是锁屏的那个快捷键）,就可以把外部的内容拷贝到vim里面了。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 20 Dec 2015 01:25:30 +0800</pubDate>
+      </item>
+    
+      <item>
+        <title>Git学习</title>
+        <link>https://xiaohu89.com/fengzhichu-theme/blog/Git-%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/fengzhichu-theme/blog/Git-%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;h1&gt;Git Pro&lt;/h1&gt;
+
+&lt;p&gt;这个小网页又被我挖出来玩了，哈哈，之前一直同步失败是为什么呢？原来根本不懂Git的原理呀。
+今天简单补了下原理，之前我是根本就没有把我的本地页面内容同步到远端服务器上面去，所以才一直看不到我页面的更新。
+Git以我现在的理解就是一个分布式的版本控制系统，我现在所使用的Github也就是一个使用了Git技术的门户，我在Github的免费空间里创建了一个我网站的远程仓库，然后我在我本地的计算机上面也有一个本地的仓库，我实际修改的文件都是从本地或者远程仓库里面提取出来的文件，所以我现在同步网站，实际上经过了两步，首先需要通过Git commit命令将刷新生成的网站文件同步到本地仓库，然后再使用Git Push命令将本地的版本上传到Github上面的版本，最后Github上面生成的静态网页才会显示出我更新后的效果;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/fengzhichu-theme/img/git.jpg&quot; alt=&quot;Git Logo&quot;&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 21:29:33 +0800</pubDate>
+      </item>
+    
+      <item>
+        <title>Hello</title>
+        <link>https://xiaohu89.com/fengzhichu-theme/blog/hello/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/fengzhichu-theme/blog/hello/</guid>
+        <description>&lt;p&gt;Github 开张大吉
+折腾了好几天，总算是把这个blog搭建起来了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/fengzhichu-theme/img/python.png&quot; alt=&quot;Python&quot;&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Jul 2015 22:30:30 +0800</pubDate>
+      </item>
+    
+      <item>
+        <title>Pelican 学习</title>
+        <link>https://xiaohu89.com/fengzhichu-theme/blog/Pelican-%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/fengzhichu-theme/blog/Pelican-%E5%AD%A6%E4%B9%A0/</guid>
+        <description>&lt;h1&gt;  Pelican学习笔记&lt;/h1&gt;
+
+&lt;p&gt;上上周开始想要搭一个自己的网站出来玩玩，之前接触到了Github,发现很多人利用Github pages来搭建了自己的blog，我就在知乎上找到了一篇教程，其实搭建挺简单的。主要上周买了新电脑，装系统，搭软件环境弄得很烦&lt;/p&gt;
+
+&lt;p&gt;搭站的话，其实我现在做的是最最简单的步骤，就是在本地利用工具，我现在用的是Pelican这个组件，自动生成了一个网页所需要的各个资源文件，然后在本地生成静态的Html页面，然后通过Git将本地的Html页面推送到Github上面，和Github page绑定，最后在网上找一个代理把你申请的domain和你的Github page域名互相绑定,i然后你发现你输入你申请的域名，就可以访问你私人的部落格了。&lt;/p&gt;
+
+&lt;p&gt;在编辑页面的时候，其实使用的就是Markdown的语法了，所以生成的页面文件后缀名也叫.md，所以有啥不清楚直接去看markdown的语法说明咯. ubuntu下面的alias设置可以去/etc目录下编辑bash.bashrc文件，添加永久的alias映射，比如今天我就添加了一个杀死pelican进程的快捷命令.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;alias killpelican=&amp;quot;ps -elf | grep pelican | cut -c 15-20 | xargs kill -9&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;cut -c的意思是将前面的输入截取第15个至第20个字符，也就是进程的pid，xargs的意思是将前面的输出作为kill -9的输入参数。&lt;/p&gt;
+
+&lt;h1&gt;&lt;/h1&gt;
+
+&lt;p&gt;自从上上周网站雏形搭出来以后，很是懈怠，好多功能都没有实现，接着弄啊，怎么实现评论，怎么实时更新页面，怎么样添加插件等等。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 19 Jul 2015 20:24:30 +0800</pubDate>
+      </item>
+    
+  </channel>
+</rss>
