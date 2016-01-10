@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/fengzhichu-theme" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
+baseurl: "/bolg" # Set it to "" if use for personal site. The subpath of your site, e.g. /blog/
 url: "https://xiaohu89.com" # the base hostname & protocol for your site
 imageurl: "https://source.unsplash.com/category/nature/2600x500" #"https://unsplash.it/2600/500?random"
 
@@ -15,7 +15,7 @@ theme:
   visiblewords: 300
   # Header and footer text
   header_text: >
-     仗剑走天涯，看一看世间的繁华.
+     曾梦想仗剑走天涯，看一看世间的繁华.
 
   header_text_feature_image: img/sample_feature_img.png
   place_holder_image: img/sample_feature_img.png
