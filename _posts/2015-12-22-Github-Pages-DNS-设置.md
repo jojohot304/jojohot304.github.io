@@ -15,7 +15,7 @@ categories:	Git
 4. 进入DNSPOD的设置页面，建两条A记录，把自己买的域名解析到上一步得到的那几个ip地址上
 5. 进入Github上面静态网页的库里面，在根目录下面创建一个CNAME文件，里面输入买的域名（不带http://和WWW）
 
-![DNSPOD](/fengzhichu-theme/img/DNSPOD-Set.png)
+![DNSPOD](/img/DNSPOD-Set.png)
 
 然后就搞定了。
 
