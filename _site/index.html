@@ -272,7 +272,7 @@
 <li>进入Github上面静态网页的库里面，在根目录下面创建一个CNAME文件，里面输入买的域名（不带http://和WWW）</li>
 </ol>
 
-<p><img src="/fengzhichu-theme/img/DNSPOD-Set.png" alt="DNSPOD"></p>
+<p><img src="/img/DNSPOD-Set.png" alt="DNSPOD"></p>
 
 <p>然后就搞定了。</p>
 
@@ -348,7 +348,7 @@ export PATH=$PATH:/usr/local/bin
 root@xiaohu-Z7:/home/xiaohu/blog/xiaohu-site# ls
 about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _sass  _site
 </code></pre></div>
-<p><img src="/fengzhichu-theme/img/jekyll.jpg" alt="Jekyll Logo"></p>
+<p><img src="/img/jekyll.jpg" alt="Jekyll Logo"></p>
 
 <p>PS: 写文章的时候，可以用鼠标选中外部窗口的内容，然后回到vim中，按shift+insert（就是锁屏的那个快捷键）,就可以把外部的内容拷贝到vim里面了。</p>
  -->
@@ -382,7 +382,18 @@ about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _
 今天简单补了下原理，之前我是根本就没有把我的本地页面内容同步到远端服务器上面去，所以才一直看不到我页面的更新。
 Git以我现在的理解就是一个分布式的版本控制系统，我现在所使用的Github也就是一个使用了Git技术的门户，我在Github的免费空间里创建了一个我网站的远程仓库，然后我在我本地的计算机上面也有一个本地的仓库，我实际修改的文件都是从本地或者远程仓库里面提取出来的文件，所以我现在同步网站，实际上经过了两步，首先需要通过Git commit命令将刷新生成的网站文件同步到本地仓库，然后再使用Git Push命令将本地的版本上传到Github上面的版本，最后Github上面生成的静态网页才会显示出我更新后的效果;</p>
 
-<p><img src="/fengzhichu-theme/img/git.jpg" alt="Git Logo"></p>
+<h2>Git的一些常用命令</h2>
+
+<p>git init #此命令会在当前目录下初始化生成一个Git仓库，也就是本地仓库,默认会创建一个叫master的本地分支
+git status #此命令可以查看当前本地分支的状态，比如显示当前的目录下哪些文件有了改变，哪些文件已经被加入到了推送队列中
+git add #此命令把当前分支中的文件加入到推送队列中，可以用-A指令添加所有文件
+git remote add/remove/show #添加删除显示当前远程分支的状态
+git push -u remote local #将本地的分支推送至远端的分支上去
+git push -force #强制推送，比如两边分支中文件数目都不一致，就需要强制推送才能成功</p>
+
+<p>更加详细的命令和相关原理可一参考大作，<a href="git.oschina.net/progit">Pro Git</a></p>
+
+<p><img src="/img/git.jpg" alt="Git Logo"></p>
  -->
 		  
 		  </div>
@@ -411,7 +422,7 @@ Git以我现在的理解就是一个分布式的版本控制系统，我现在�
 		 <!--  <p>Github 开张大吉
 折腾了好几天，总算是把这个blog搭建起来了</p>
 
-<p><img src="/fengzhichu-theme/img/python.png" alt="Python"></p>
+<p><img src="/img/python.png" alt="Python"></p>
  -->
 		  
 		  </div>
