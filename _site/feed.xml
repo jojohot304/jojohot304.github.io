@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>从现在开始</title>
-    <atom:link href="https://xiaohu89.com/bolg/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://xiaohu89.com/bolg/</link>
+    <atom:link href="https://xiaohu89.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://xiaohu89.com/</link>
     <description>used by search engines</description>
-    <pubDate>Sun, 10 Jan 2016 15:39:49 +0800</pubDate>
+    <pubDate>Sun, 10 Jan 2016 15:46:57 +0800</pubDate>
     
       <item>
         <title>Github Pages DNS设置</title>
-        <link>https://xiaohu89.com/bolg/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/bolg/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</guid>
+        <link>https://xiaohu89.com/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</guid>
         <description>&lt;p&gt;经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。&lt;/p&gt;
 
 &lt;p&gt;其实设置很简单呐，只是刚开始的时候我看网上的教程很盲目，得到的信息太混乱了，我现在也就是在3个地方对域名的解析有相关的设置，Godaddy，DNSPOD以及Github上面的CNAME：&lt;/p&gt;
@@ -34,8 +34,8 @@
     
       <item>
         <title>Jekyll 安装</title>
-        <link>https://xiaohu89.com/bolg/blog/jekyll-%E5%AE%89%E8%A3%85/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/bolg/blog/jekyll-%E5%AE%89%E8%A3%85/</guid>
+        <link>https://xiaohu89.com/blog/jekyll-%E5%AE%89%E8%A3%85/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/blog/jekyll-%E5%AE%89%E8%A3%85/</guid>
         <description>&lt;h1&gt;安装jekyll&lt;/h1&gt;
 
 &lt;h1&gt;&lt;/h1&gt;
@@ -91,8 +91,8 @@ about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _
     
       <item>
         <title>Git学习</title>
-        <link>https://xiaohu89.com/bolg/blog/Git-%E5%AD%A6%E4%B9%A0/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/bolg/blog/Git-%E5%AD%A6%E4%B9%A0/</guid>
+        <link>https://xiaohu89.com/blog/Git-%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/blog/Git-%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;h1&gt;Git Pro&lt;/h1&gt;
 
 &lt;p&gt;这个小网页又被我挖出来玩了，哈哈，之前一直同步失败是为什么呢？原来根本不懂Git的原理呀。
@@ -106,8 +106,8 @@ Git以我现在的理解就是一个分布式的版本控制系统，我现在�
     
       <item>
         <title>Hello</title>
-        <link>https://xiaohu89.com/bolg/blog/hello/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/bolg/blog/hello/</guid>
+        <link>https://xiaohu89.com/blog/hello/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/blog/hello/</guid>
         <description>&lt;p&gt;Github 开张大吉
 折腾了好几天，总算是把这个blog搭建起来了&lt;/p&gt;
 
@@ -118,8 +118,8 @@ Git以我现在的理解就是一个分布式的版本控制系统，我现在�
     
       <item>
         <title>Pelican 学习</title>
-        <link>https://xiaohu89.com/bolg/blog/Pelican-%E5%AD%A6%E4%B9%A0/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/bolg/blog/Pelican-%E5%AD%A6%E4%B9%A0/</guid>
+        <link>https://xiaohu89.com/blog/Pelican-%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">https://xiaohu89.com/blog/Pelican-%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;h1&gt;  Pelican学习笔记&lt;/h1&gt;
 
 &lt;p&gt;上上周开始想要搭一个自己的网站出来玩玩，之前接触到了Github,发现很多人利用Github pages来搭建了自己的blog，我就在知乎上找到了一篇教程，其实搭建挺简单的。主要上周买了新电脑，装系统，搭软件环境弄得很烦&lt;/p&gt;
