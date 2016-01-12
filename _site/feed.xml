@@ -2,15 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>从现在开始</title>
-    <atom:link href="https://xiaohu89.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://xiaohu89.com/</link>
+    <atom:link href="http://xiaohu89.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>http://xiaohu89.com/</link>
     <description>used by search engines</description>
-    <pubDate>Sun, 10 Jan 2016 16:09:16 +0800</pubDate>
+    <pubDate>Tue, 12 Jan 2016 22:09:47 +0800</pubDate>
+    
+      <item>
+        <title>2016.1 学习规划</title>
+        <link>http://xiaohu89.com/blog/1%E6%9C%88%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</link>
+        <guid isPermaLink="true">http://xiaohu89.com/blog/1%E6%9C%88%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/</guid>
+        <description>&lt;h1&gt;回顾去年11月份的一些学习规划&lt;/h1&gt;
+
+&lt;p&gt;去年11月的时候安排一下2个月的学习计划，现在看来，完成的还不错
+-上课，已完成Justice那门课程，上课的过程还是算比较轻松，虽然每次让我课前用英文写一堆讨论观点的时候还是比较痛苦，但是课程作业不多，并且这门课其实是需要课外去阅读相关哲学的著作的（显然我是没去阅读的。。），完成这门课也就花了3周时间的样子
+-改变娱乐方式，已完成，心爱的Dota2已卸载，反复思考后，我发现我现在虽然仍然有冲上5000分打质量局的实力和决心，但是真的是没有这个时间了，考虑现在胜率在57%左右，从现在冲800分需要8000/（10×（57%-43%）×25）=228盘，每天坚持2局也需要110天才能冲上去，所以其实时间也是一种实力，哈哈。
+-阅读，部分完成，想读一读欧洲近代史，Kindle上面买了本1840-1870年的欧洲近代史，看了我才知道原来中立描述的历史书真是有点无聊。。感觉是一本工具书，一本编年史，列出各种数字，给出事件的发生时刻/地点/人物/背景，剩下的就靠读者你自己去消化了，当前进度缓慢，看了不到15%，后面可以考虑跳着看，看想要了解的部分，例如宗教史可以粗略的浏览。&lt;/p&gt;
+
+&lt;h1&gt;记今年1月份的一些学习规划&lt;/h1&gt;
+
+&lt;p&gt;-上课，当前在EDX和Coursera上面看到的计算机相关课程都并不深入，感觉学习起来效率并不高，所以现在还是倾向于在上面报非技术类别的课程，当前报了一门美国南北战争史，主要看课程的介绍视频拍的很专业也用心，而且老师的嗓音听起来很舒服的样子，此课1月30号开始;我之前也去找过之前上过的History of Global Architectures，然而这门课并没有出第二季。
+-改变娱乐方式，其实上次卸载完了Dota2之后，我迅速把精力放到了单机上面去，先玩通了侠客风云传，后面又是打完了虫群之心和虚空之遗的战役，直接导致现在竟然开始看上了星际老男孩，不过那几个谐星还真是搞笑;现在问题主要是&lt;b&gt;看直播时间有点多！&lt;/b&gt;常常回家有事没事点开直播，然后一小时，甚至两小时就过去了T_T，这不是一个好的习惯;
+-补漫补番，这其实是接上一条，现在主要需要补的漫有：浪客行，进击的巨人。动画：火影这种已经完结了的如果动画也出到完结了我就去把它补了
+-阅读，《欧洲近代史》进入想了解的章节（政治，军事，经济等），《三体》&lt;/p&gt;
+
+&lt;h1&gt;未完待续...&lt;/h1&gt;
+</description>
+        <pubDate>Tue, 12 Jan 2016 00:00:00 +0800</pubDate>
+      </item>
     
       <item>
         <title>Github Pages DNS设置</title>
-        <link>https://xiaohu89.com/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</guid>
+        <link>http://xiaohu89.com/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</link>
+        <guid isPermaLink="true">http://xiaohu89.com/blog/Github-Pages-DNS-%E8%AE%BE%E7%BD%AE/</guid>
         <description>&lt;p&gt;经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。&lt;/p&gt;
 
 &lt;p&gt;其实设置很简单呐，只是刚开始的时候我看网上的教程很盲目，得到的信息太混乱了，我现在也就是在3个地方对域名的解析有相关的设置，Godaddy，DNSPOD以及Github上面的CNAME：&lt;/p&gt;
@@ -34,8 +57,8 @@
     
       <item>
         <title>Jekyll 安装</title>
-        <link>https://xiaohu89.com/blog/jekyll-%E5%AE%89%E8%A3%85/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/blog/jekyll-%E5%AE%89%E8%A3%85/</guid>
+        <link>http://xiaohu89.com/blog/jekyll-%E5%AE%89%E8%A3%85/</link>
+        <guid isPermaLink="true">http://xiaohu89.com/blog/jekyll-%E5%AE%89%E8%A3%85/</guid>
         <description>&lt;h1&gt;安装jekyll&lt;/h1&gt;
 
 &lt;h1&gt;&lt;/h1&gt;
@@ -91,8 +114,8 @@ about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _
     
       <item>
         <title>Git学习</title>
-        <link>https://xiaohu89.com/blog/Git-%E5%AD%A6%E4%B9%A0/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/blog/Git-%E5%AD%A6%E4%B9%A0/</guid>
+        <link>http://xiaohu89.com/blog/Git-%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">http://xiaohu89.com/blog/Git-%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;h1&gt;Git Pro&lt;/h1&gt;
 
 &lt;p&gt;这个小网页又被我挖出来玩了，哈哈，之前一直同步失败是为什么呢？原来根本不懂Git的原理呀。
@@ -101,14 +124,16 @@ Git以我现在的理解就是一个分布式的版本控制系统，我现在�
 
 &lt;h2&gt;Git的一些常用命令&lt;/h2&gt;
 
-&lt;p&gt;git init #此命令会在当前目录下初始化生成一个Git仓库，也就是本地仓库,默认会创建一个叫master的本地分支
-git status #此命令可以查看当前本地分支的状态，比如显示当前的目录下哪些文件有了改变，哪些文件已经被加入到了推送队列中
-git add #此命令把当前分支中的文件加入到推送队列中，可以用-A指令添加所有文件
-git remote add/remove/show #添加删除显示当前远程分支的状态
-git push -u remote local #将本地的分支推送至远端的分支上去
-git push -force #强制推送，比如两边分支中文件数目都不一致，就需要强制推送才能成功&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git init #此命令会在当前目录下初始化生成一个Git仓库，也就是本地仓库,默认会创建一个叫master的本地分支&lt;/li&gt;
+&lt;li&gt;git status #此命令可以查看当前本地分支的状态，比如显示当前的目录下哪些文件有了改变，哪些文件已经被加入到了推送队列中&lt;/li&gt;
+&lt;li&gt;git add #此命令把当前分支中的文件加入到推送队列中，可以用-A指令添加所有文件&lt;/li&gt;
+&lt;li&gt;git remote add/remove/show #添加删除显示当前远程分支的状态&lt;/li&gt;
+&lt;li&gt;git push -u remote local #将本地的分支推送至远端的分支上去&lt;/li&gt;
+&lt;li&gt;git push -force #强制推送，比如两边分支中文件数目都不一致，就需要强制推送才能成功&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;更加详细的命令和相关原理可一参考大作，&lt;a href=&quot;git.oschina.net/progit&quot;&gt;Pro Git&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;更加详细的命令和相关原理可一参考大作，&lt;a href=&quot;%22http://git.oschina.net/progit%22&quot;&gt;Pro Git&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img/git.jpg&quot; alt=&quot;Git Logo&quot;&gt;&lt;/p&gt;
 </description>
@@ -117,8 +142,8 @@ git push -force #强制推送，比如两边分支中文件数目都不一致，
     
       <item>
         <title>Hello</title>
-        <link>https://xiaohu89.com/blog/hello/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/blog/hello/</guid>
+        <link>http://xiaohu89.com/blog/hello/</link>
+        <guid isPermaLink="true">http://xiaohu89.com/blog/hello/</guid>
         <description>&lt;p&gt;Github 开张大吉
 折腾了好几天，总算是把这个blog搭建起来了&lt;/p&gt;
 
@@ -129,8 +154,8 @@ git push -force #强制推送，比如两边分支中文件数目都不一致，
     
       <item>
         <title>Pelican 学习</title>
-        <link>https://xiaohu89.com/blog/Pelican-%E5%AD%A6%E4%B9%A0/</link>
-        <guid isPermaLink="true">https://xiaohu89.com/blog/Pelican-%E5%AD%A6%E4%B9%A0/</guid>
+        <link>http://xiaohu89.com/blog/Pelican-%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">http://xiaohu89.com/blog/Pelican-%E5%AD%A6%E4%B9%A0/</guid>
         <description>&lt;h1&gt;  Pelican学习笔记&lt;/h1&gt;
 
 &lt;p&gt;上上周开始想要搭一个自己的网站出来玩玩，之前接触到了Github,发现很多人利用Github pages来搭建了自己的blog，我就在知乎上找到了一篇教程，其实搭建挺简单的。主要上周买了新电脑，装系统，搭软件环境弄得很烦&lt;/p&gt;
