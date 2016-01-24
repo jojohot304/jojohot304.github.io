@@ -19,17 +19,19 @@ layout: default
 		        {{ post.title }}
 		      </a>
 		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">{{ post.date | date: "%Y年%m月%-d日" }}</a>
 		      {% if post.author %} | <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
-		      {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
-		    </p>
+		       {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}
+		    </p>-->
 		  </header>
 		  <div class="excerpt">
 		  {% assign num = post.content | number_of_words %}
 		  {% if  num  < site.theme.visiblewords %}
-		 <!--  {{ post.content }} -->
+		   <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
+                   <!--  {{ post.content }} -->
 		  {% else %}
+                   <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
 		   <!-- {{ post.content | truncatewords: site.theme.visiblewords }} -->
 		    <p>
 		    <a class="text" href="{{ post.url | prepend: site.baseurl }}">
@@ -38,7 +40,13 @@ layout: default
 		    </p>
 		  {% endif %}
 		  </div>
-		</div>
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">{{ post.date | date: "%Y年%m月%-d日" }}</a>
+		      by
+		      {% if post.author %}  <a class="subtitle" href="{{ site.baseurl }}/about/">{{ post.author }}</a>{% endif %}
+		      <!-- {% if post.category and post.tags %} | <a class="subtitle">{{ category_content }}</a> <a class="subtitle">{{ tags_content }}</a>{% endif %}-->
+		    </p>
+                </div>
 		{% endfor %}
 	</div>
 

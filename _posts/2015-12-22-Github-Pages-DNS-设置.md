@@ -3,6 +3,7 @@ layout:		post
 title:		Github Pages DNS设置
 date:		2015-12-20 22:38:30 +0800
 categories:	Git
+author:         小虎
 ---
 
 经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。

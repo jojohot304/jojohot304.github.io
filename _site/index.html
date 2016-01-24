@@ -249,43 +249,161 @@
 		<div class="post-teaser">
 		  <header>
 		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/1%E6%9C%88%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/">
-		        2016.1 学习规划
+		      <a id="post-link-trans" class="post-link" href="/blog/%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/">
+		        语法记录
 		      </a>
 		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年01月12日</a>
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年01月24日</a>
 		      
-		       | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Other/">Other</a></a> <a class="subtitle">  <i class="fa fa-tag"></i>: </a>
-		    </p>
+		       
+		    </p>-->
 		  </header>
 		  <div class="excerpt">
 		  
 		  
-		 <!--  <p>回顾去年11月份的一些学习规划</p>
+		   <p>
+
+layout:  post
+title:   一些语法记录
+date:    2016-1-24 21:18:30
+categories:  语法
+author:    小虎
+</p>
+                   <!--  <hr>
+
+<p>layout:  post
+title:   一些语法记录
+date:    2016-1-24 21:18:30
+categories:  语法
+author:    小虎</p>
+
+<h1>Linux 下用过的语法记录：</h1>
+
+<p>平常假设Local server的时候，将server stop了之后很多时候并不能将server占用的端口释放掉，这个时候可以用 netstat -ap命令来查看当前系统中的端口号占用情况，进一步需要手动指定关闭指定的端口号的话，可以这样：
+- 本地创建一个shell脚本文件，shell脚本中可以直接输入想要在命令行中的执行的命令，shell脚本的输入参数可以在脚本中已$+数字的方式指带
+- shell中写： netstat -ap | grep $1 | tr -s &#39; &#39;| cut -d &#39; &#39; -f 7 | cut -d / -f 1 | xrags kill -9</p>
+
+<ul>
+<li>这里面tr -s是将多个空格变为一个空格，cut -d &#39; &#39;的意思是以一个空格为分隔符，将输出的文本分隔开来，-f 7 是提取第一部分的文本，最后将得到占用了指定端口号的Pid，这个pid作为 kill -9 的输入参数，之后就可以关闭这个指定的端口号</li>
+</ul>
+
+<h1>Python语法记录：</h1>
+
+<p>经常看到有函数会定义为：func(/<em>arg,</em>*kw)的形式，×arg的意思其实是可变的变量，也就是此函数可以接受的变量数目是不定的，有可能1个变量，有可能100个变量这样;××kw的意思是接受输入的参数是字典的形式，×arg，××kw两个搭配起来，就表示这个函数可以接受任何变量的意思，作为一种通配符的作用</p>
+
+<p>迭代： 定义变量为1的过程，调用变量为N+1时候的方法，最终得到变量为N的结果，写迭代的时候一定用数学归纳法的方法来思考</p>
+
+<p>map/reduce： map的作用是将单个函数作用于一组对象上面去，map（f，×arg）的形式，返回结果当然也就是一组序列，而reduce的作用是使用输入的函数f依次作用于输入对象上面，其中f一次只能接收2个参数，reduce就类似于一种累加的效果作用于输入对象组</p>
+
+<p>filter: 这个方法很好理解，过滤器，就是使用输入的函数方法f对于对象组进行过滤，返回值是经过f过滤之后的对象组</p>
+
+<p>lambda： lambda x ： 2x  就表述一个函数方法输入为x，返回值为2x，这个语法可以快速定义一个函数</p>
+
+<p>HTML相关：  最简单的HTTP消息，客户端为服务端发请求消息，一般为GET或者POST：
+- GET消息，包含客户端请求的HTTP版本信息; 访问的域名，也就是HOST; 访问的路径信息
+- POST消息，在GET消息的基础之上增加了用户的账户信息，用于登录服务端
+- 服务端响应消息，包括响应码，200为成功，3XX为重定向，4XX为客户端请求错误，5XX为服务端错误; 响应的内容包含在消息的body内</p>
+ -->
+		  
+		  </div>
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年01月24日</a>
+		      by
+		      
+		      <!-- -->
+		    </p>
+                </div>
+		
+		
+	
+
+	
+		<div class="post-teaser">
+		  <header>
+		    <h1>
+		      <a id="post-link-trans" class="post-link" href="/blog/%E5%B9%B4%E5%89%8D%E7%BD%91%E7%AE%A1%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/">
+		        高级网管培养计划
+		      </a>
+		    </h1>
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年01月24日</a>
+		       | <a class="subtitle" href="/about/">小虎</a>
+		        | <a class="subtitle"></a> <a class="subtitle">  <i class="fa fa-tag"></i>: </a>
+		    </p>-->
+		  </header>
+		  <div class="excerpt">
+		  
+		  
+		   <p>还有2周过年啦，年前没有完成的事情还有点多：
+</p>
+                   <!--  <p>还有2周过年啦，年前没有完成的事情还有点多：</p>
+
+<p>几个学习专题，有的未开始自学，有的学了没有总结：
++ PCC专题，已学习，基本捋清了PCC的各种原理知识，包括SA-Basic，PCRF与PCEF的交互细节，常见套餐的配置方式，需要总结一篇文章进行归纳
++ IP专题，未学习，当前可供学习的材料的话也就是基础的数通原理，基本原理已经学习多次，不必再看，还是以实验室小机房为管道，学习核心网网元的各类IP路由规划和实现方式
++ QOS专题，这部分其实和PCC有叠加，PCC是实现QOS控制的重要手段之一，这方面材料可以从huihui哥写的总结开始着手
++ NFV专题，学习了一半，总结了一篇NFV基础知识的文章出来，现在已经能够掌握NFV的各种名词术语和基本含义，对于上层APP网元和MANO，继续学习材料，输出总结出来</p>
+ -->
+		  
+		  </div>
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年01月24日</a>
+		      by
+		        <a class="subtitle" href="/about/">小虎</a>
+		      <!--  | <a class="subtitle"></a> <a class="subtitle">  <i class="fa fa-tag"></i>: </a>-->
+		    </p>
+                </div>
+		
+		
+	
+
+	
+		<div class="post-teaser">
+		  <header>
+		    <h1>
+		      <a id="post-link-trans" class="post-link" href="/blog/1%E6%9C%88%E5%AD%A6%E4%B9%A0%E8%A7%84%E5%88%92/">
+		        2016.1 学习规划
+		      </a>
+		    </h1>
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年01月12日</a>
+		       | <a class="subtitle" href="/about/">小虎</a>
+		        | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Other/">Other</a></a> <a class="subtitle">  <i class="fa fa-tag"></i>: </a>
+		    </p>-->
+		  </header>
+		  <div class="excerpt">
+		  
+		  
+		   <p>回顾去年11月份的一些学习规划
+</p>
+                   <!--  <p>回顾去年11月份的一些学习规划</p>
 
 <p>去年11月的时候安排一下2个月的学习计划，现在看来，完成的还不错</p>
 
 <ul>
 <li>上课，已完成Justice那门课程，上课的过程还是算比较轻松，虽然每次让我课前用英文写一堆讨论观点的时候还是比较痛苦，但是课程作业不多，并且这门课其实是需要课外去阅读相关哲学的著作的（显然我是没去阅读的。。），完成这门课也就花了3周时间的样子</li>
-<li>改变娱乐方式，已完成，心爱的Dota2已卸载，反复思考后，我发现我现在虽然仍然有冲上5000分打质量局的实力和决心，但是真的是没有这个时间了，考虑现在胜率在57%左右，从现在冲800分需要8000/（10×（57%-43%）×25）=228盘，每天坚持2局也需要110天才能冲上去，所以其实时间也是一种实力，哈哈。
-+阅读，部分完成，想读一读欧洲近代史，Kindle上面买了本1840-1870年的欧洲近代史，看了我才知道原来中立描述的历史书真是有点无聊。。感觉是一本工具书，一本编年史，列出各种数字，给出事件的发生时刻/地点/人物/背景，剩下的就靠读者你自己去消化了，当前进度缓慢，看了不到15%，后面可以考虑跳着看，看想要了解的部分，例如宗教史可以粗略的浏览。</li>
+<li>改变娱乐方式，已完成，心爱的Dota2已卸载，反复思考后，我发现我现在虽然仍然有冲上5000分打质量局的实力和决心，但是真的是没有这个时间了，考虑现在胜率在57%左右，从现在冲800分需要8000/（10×（57%-43%）×25）=228盘，每天坚持2局也需要110天才能冲上去，所以其实时间也是一种实力，哈哈。</li>
+<li>阅读，部分完成，想读一读欧洲近代史，Kindle上面买了本1840-1870年的欧洲近代史，看了我才知道原来中立描述的历史书真是有点无聊。。感觉是一本工具书，一本编年史，列出各种数字，给出事件的发生时刻/地点/人物/背景，剩下的就靠读者你自己去消化了，当前进度缓慢，看了不到15%，后面可以考虑跳着看，看想要了解的部分，例如宗教史可以粗略的浏览。</li>
 </ul>
 
 <p>记今年1月份的一些学习规划</p>
 
 <ul>
-<li>上课，当前在EDX和Coursera上面看到的计算机相关课程都并不深入，感觉学习起来效率并不高，所以现在还是倾向于在上面报非技术类别的课程，当前报了一门美国南北战争史，主要看课程的介绍视频拍的很专业也用心，而且老师的嗓音听起来很舒服的样子，此课1月30号开始;我之前也去找过之前上过的History of Global Architectures，然而这门课并没有出第二季。</li>
-<li>改变娱乐方式，其实上次卸载完了Dota2之后，我迅速把精力放到了单机上面去，先玩通了侠客风云传，后面又是打完了虫群之心和虚空之遗的战役，直接导致现在竟然开始看上了星际老男孩，不过那几个谐星还真是搞笑;现在问题主要是<b>看直播时间有点多！</b>常常回家有事没事点开直播，然后一小时，甚至两小时就过去了T_T，这不是一个好的习惯;</li>
-<li>补漫补番，这其实是接上一条，现在主要需要补的漫有：浪客行，进击的巨人。动画：火影这种已经完结了的如果动画也出到完结了我就去把它补了
--阅读，《欧洲近代史》进入想了解的章节（政治，军事，经济等），《三体》</li>
+<li>上课，当前在EDX和Coursera上面看到的计算机相关课程都并不深入，感觉学习起来效率并不高，所以现在还是倾向于在上面报非技术类别的课程，当前报了一门美国南北战争史，主要看课程的介绍视频拍的很专业也用心，而且老师的嗓音听起来很舒服的样子，此课1月30号开始;我之前也去找过之前上过的History of Global Architectures，然而这门课并没有出第二季。这个是EDX上面的课程，另外找了python3的一个教程在学，接触了好多没有接触过的知识，但是学习这个最大的问题就是写的太少了，没有机会去写，两天不写的话就又生疏了</li>
+<li>改变娱乐方式，其实上次卸载完了Dota2之后，我迅速把精力放到了单机上面去，先玩通了侠客风云传，后面又是打完了虫群之心和虚空之遗的战役，直接导致现在竟然开始看上了星际老男孩，不过那几个谐星还真是搞笑;现在问题主要是<b>看直播时间有点多！</b>常常回家有事没事点开直播，然后一小时，甚至两小时就过去了T_T，这不是一个好的习惯;补漫补番，这其实是接上一条，现在主要需要补的漫有：浪客行，进击的巨人。动画：火影这种已经完结了的如果动画也出到完结了我就去把它补了</li>
+<li>阅读，《欧洲近代史》进入想了解的章节（政治，军事，经济等），《三体》，现在把三体第一部已经看完了，名不虚传，逻辑和剧情都经得起推敲。</li>
 </ul>
-
-<p>未完待续...</p>
  -->
 		  
 		  </div>
-		</div>
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2016年01月12日</a>
+		      by
+		        <a class="subtitle" href="/about/">小虎</a>
+		      <!--  | <a class="subtitle">  <i class="fa fa-book"></i>: <a href="/Other/">Other</a></a> <a class="subtitle">  <i class="fa fa-tag"></i>: </a>-->
+		    </p>
+                </div>
 		
 		
 	
@@ -298,16 +416,18 @@
 		        Github Pages DNS设置
 		      </a>
 		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">2015年12月20日</a>
-		      
-		      
-		    </p>
+		       | <a class="subtitle" href="/about/">小虎</a>
+		       
+		    </p>-->
 		  </header>
 		  <div class="excerpt">
 		  
 		  
-		 <!--  <p>经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。</p>
+		   <p>经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。
+</p>
+                   <!--  <p>经过一系列的研究之后，我好像终于把用Github Page托管静态网页的DNS配置好了。</p>
 
 <p>其实设置很简单呐，只是刚开始的时候我看网上的教程很盲目，得到的信息太混乱了，我现在也就是在3个地方对域名的解析有相关的设置，Godaddy，DNSPOD以及Github上面的CNAME：</p>
 
@@ -327,7 +447,13 @@
  -->
 		  
 		  </div>
-		</div>
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2015年12月20日</a>
+		      by
+		        <a class="subtitle" href="/about/">小虎</a>
+		      <!-- -->
+		    </p>
+                </div>
 		
 		
 	
@@ -340,16 +466,20 @@
 		        Jekyll 安装
 		      </a>
 		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">2015年12月20日</a>
-		      
-		      
-		    </p>
+		       | <a class="subtitle" href="/about/">小虎</a>
+		       
+		    </p>-->
 		  </header>
 		  <div class="excerpt">
 		  
 		  
-		 <!--  <h1>安装jekyll</h1>
+		   <p>安装jekyll
+
+
+</p>
+                   <!--  <h1>安装jekyll</h1>
 
 <h1></h1>
 
@@ -401,81 +531,13 @@ about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _
  -->
 		  
 		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/Git-%E5%AD%A6%E4%B9%A0/">
-		        Git学习
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2015年12月16日</a>
-		      
-		      
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2015年12月20日</a>
+		      by
+		        <a class="subtitle" href="/about/">小虎</a>
+		      <!-- -->
 		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		 <!--  <h1>Git Pro</h1>
-
-<p>这个小网页又被我挖出来玩了，哈哈，之前一直同步失败是为什么呢？原来根本不懂Git的原理呀。
-今天简单补了下原理，之前我是根本就没有把我的本地页面内容同步到远端服务器上面去，所以才一直看不到我页面的更新。
-Git以我现在的理解就是一个分布式的版本控制系统，我现在所使用的Github也就是一个使用了Git技术的门户，我在Github的免费空间里创建了一个我网站的远程仓库，然后我在我本地的计算机上面也有一个本地的仓库，我实际修改的文件都是从本地或者远程仓库里面提取出来的文件，所以我现在同步网站，实际上经过了两步，首先需要通过Git commit命令将刷新生成的网站文件同步到本地仓库，然后再使用Git Push命令将本地的版本上传到Github上面的版本，最后Github上面生成的静态网页才会显示出我更新后的效果;</p>
-
-<h2>Git的一些常用命令</h2>
-
-<ul>
-<li>git init #此命令会在当前目录下初始化生成一个Git仓库，也就是本地仓库,默认会创建一个叫master的本地分支</li>
-<li>git status #此命令可以查看当前本地分支的状态，比如显示当前的目录下哪些文件有了改变，哪些文件已经被加入到了推送队列中</li>
-<li>git add #此命令把当前分支中的文件加入到推送队列中，可以用-A指令添加所有文件</li>
-<li>git remote add/remove/show #添加删除显示当前远程分支的状态</li>
-<li>git push -u remote local #将本地的分支推送至远端的分支上去</li>
-<li>git push -force #强制推送，比如两边分支中文件数目都不一致，就需要强制推送才能成功</li>
-</ul>
-
-<p>更加详细的命令和相关原理可一参考大作，<a href="%22http://git.oschina.net/progit%22">Pro Git</a></p>
-
-<p><img src="/img/git.jpg" alt="Git Logo"></p>
- -->
-		  
-		  </div>
-		</div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/hello/">
-		        Hello
-		      </a>
-		    </h1>
-		    <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2015年07月20日</a>
-		      
-		      
-		    </p>
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		 <!--  <p>Github 开张大吉
-折腾了好几天，总算是把这个blog搭建起来了</p>
-
-<p><img src="/img/python.png" alt="Python"></p>
- -->
-		  
-		  </div>
-		</div>
+                </div>
 		
 	</div>
 
