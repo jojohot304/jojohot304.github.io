@@ -249,79 +249,6 @@
 		<div class="post-teaser">
 		  <header>
 		    <h1>
-		      <a id="post-link-trans" class="post-link" href="/blog/%E8%AF%AD%E6%B3%95%E8%AE%B0%E5%BD%95/">
-		        语法记录
-		      </a>
-		    </h1>
-		    <!--<p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年01月24日</a>
-		      
-		       
-		    </p>-->
-		  </header>
-		  <div class="excerpt">
-		  
-		  
-		   <p>
-
-layout:  post
-title:   一些语法记录
-date:    2016-1-24 21:18:30
-categories:  语法
-author:    小虎
-</p>
-                   <!--  <hr>
-
-<p>layout:  post
-title:   一些语法记录
-date:    2016-1-24 21:18:30
-categories:  语法
-author:    小虎</p>
-
-<h1>Linux 下用过的语法记录：</h1>
-
-<p>平常假设Local server的时候，将server stop了之后很多时候并不能将server占用的端口释放掉，这个时候可以用 netstat -ap命令来查看当前系统中的端口号占用情况，进一步需要手动指定关闭指定的端口号的话，可以这样：
-- 本地创建一个shell脚本文件，shell脚本中可以直接输入想要在命令行中的执行的命令，shell脚本的输入参数可以在脚本中已$+数字的方式指带
-- shell中写： netstat -ap | grep $1 | tr -s &#39; &#39;| cut -d &#39; &#39; -f 7 | cut -d / -f 1 | xrags kill -9</p>
-
-<ul>
-<li>这里面tr -s是将多个空格变为一个空格，cut -d &#39; &#39;的意思是以一个空格为分隔符，将输出的文本分隔开来，-f 7 是提取第一部分的文本，最后将得到占用了指定端口号的Pid，这个pid作为 kill -9 的输入参数，之后就可以关闭这个指定的端口号</li>
-</ul>
-
-<h1>Python语法记录：</h1>
-
-<p>经常看到有函数会定义为：func(/<em>arg,</em>*kw)的形式，×arg的意思其实是可变的变量，也就是此函数可以接受的变量数目是不定的，有可能1个变量，有可能100个变量这样;××kw的意思是接受输入的参数是字典的形式，×arg，××kw两个搭配起来，就表示这个函数可以接受任何变量的意思，作为一种通配符的作用</p>
-
-<p>迭代： 定义变量为1的过程，调用变量为N+1时候的方法，最终得到变量为N的结果，写迭代的时候一定用数学归纳法的方法来思考</p>
-
-<p>map/reduce： map的作用是将单个函数作用于一组对象上面去，map（f，×arg）的形式，返回结果当然也就是一组序列，而reduce的作用是使用输入的函数f依次作用于输入对象上面，其中f一次只能接收2个参数，reduce就类似于一种累加的效果作用于输入对象组</p>
-
-<p>filter: 这个方法很好理解，过滤器，就是使用输入的函数方法f对于对象组进行过滤，返回值是经过f过滤之后的对象组</p>
-
-<p>lambda： lambda x ： 2x  就表述一个函数方法输入为x，返回值为2x，这个语法可以快速定义一个函数</p>
-
-<p>HTML相关：  最简单的HTTP消息，客户端为服务端发请求消息，一般为GET或者POST：
-- GET消息，包含客户端请求的HTTP版本信息; 访问的域名，也就是HOST; 访问的路径信息
-- POST消息，在GET消息的基础之上增加了用户的账户信息，用于登录服务端
-- 服务端响应消息，包括响应码，200为成功，3XX为重定向，4XX为客户端请求错误，5XX为服务端错误; 响应的内容包含在消息的body内</p>
- -->
-		  
-		  </div>
-		   <p id="subtitletrans" class="subtitlecontainer">
-		      <a class="subtitle">2016年01月24日</a>
-		      by
-		      
-		      <!-- -->
-		    </p>
-                </div>
-		
-		
-	
-
-	
-		<div class="post-teaser">
-		  <header>
-		    <h1>
 		      <a id="post-link-trans" class="post-link" href="/blog/%E5%B9%B4%E5%89%8D%E7%BD%91%E7%AE%A1%E5%AD%A6%E4%B9%A0%E8%AE%A1%E5%88%92/">
 		        高级网管培养计划
 		      </a>
@@ -337,13 +264,13 @@ author:    小虎</p>
 		  
 		   <p>还有2周过年啦，年前没有完成的事情还有点多：
 </p>
-                   <!--  <p>还有2周过年啦，年前没有完成的事情还有点多：</p>
+                   <!--  <h1>还有2周过年啦，年前没有完成的事情还有点多：</h1>
 
 <p>几个学习专题，有的未开始自学，有的学了没有总结：
-+ PCC专题，已学习，基本捋清了PCC的各种原理知识，包括SA-Basic，PCRF与PCEF的交互细节，常见套餐的配置方式，需要总结一篇文章进行归纳
-+ IP专题，未学习，当前可供学习的材料的话也就是基础的数通原理，基本原理已经学习多次，不必再看，还是以实验室小机房为管道，学习核心网网元的各类IP路由规划和实现方式
-+ QOS专题，这部分其实和PCC有叠加，PCC是实现QOS控制的重要手段之一，这方面材料可以从huihui哥写的总结开始着手
-+ NFV专题，学习了一半，总结了一篇NFV基础知识的文章出来，现在已经能够掌握NFV的各种名词术语和基本含义，对于上层APP网元和MANO，继续学习材料，输出总结出来</p>
+- PCC专题，已学习，基本捋清了PCC的各种原理知识，包括SA-Basic，PCRF与PCEF的交互细节，常见套餐的配置方式，需要总结一篇文章进行归纳
+- IP专题，未学习，当前可供学习的材料的话也就是基础的数通原理，基本原理已经学习多次，不必再看，还是以实验室小机房为管道，学习核心网网元的各类IP路由规划和实现方式
+- QOS专题，这部分其实和PCC有叠加，PCC是实现QOS控制的重要手段之一，这方面材料可以从huihui哥写的总结开始着手
+- NFV专题，学习了一半，总结了一篇NFV基础知识的文章出来，现在已经能够掌握NFV的各种名词术语和基本含义，对于上层APP网元和MANO，继续学习材料，输出总结出来</p>
  -->
 		  
 		  </div>
@@ -533,6 +460,59 @@ about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _
 		  </div>
 		   <p id="subtitletrans" class="subtitlecontainer">
 		      <a class="subtitle">2015年12月20日</a>
+		      by
+		        <a class="subtitle" href="/about/">小虎</a>
+		      <!-- -->
+		    </p>
+                </div>
+		
+		
+	
+
+	
+		<div class="post-teaser">
+		  <header>
+		    <h1>
+		      <a id="post-link-trans" class="post-link" href="/blog/Git-%E5%AD%A6%E4%B9%A0/">
+		        Git学习
+		      </a>
+		    </h1>
+		    <!--<p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2015年12月16日</a>
+		       | <a class="subtitle" href="/about/">小虎</a>
+		       
+		    </p>-->
+		  </header>
+		  <div class="excerpt">
+		  
+		  
+		   <p>Git Pro
+</p>
+                   <!--  <h1>Git Pro</h1>
+
+<p>这个小网页又被我挖出来玩了，哈哈，之前一直同步失败是为什么呢？原来根本不懂Git的原理呀。
+今天简单补了下原理，之前我是根本就没有把我的本地页面内容同步到远端服务器上面去，所以才一直看不到我页面的更新。
+Git以我现在的理解就是一个分布式的版本控制系统，我现在所使用的Github也就是一个使用了Git技术的门户，我在Github的免费空间里创建了一个我网站的远程仓库，然后我在我本地的计算机上面也有一个本地的仓库，我实际修改的文件都是从本地或者远程仓库里面提取出来的文件，所以我现在同步网站，实际上经过了两步，首先需要通过Git commit命令将刷新生成的网站文件同步到本地仓库，然后再使用Git Push命令将本地的版本上传到Github上面的版本，最后Github上面生成的静态网页才会显示出我更新后的效果;</p>
+
+<h2>Git的一些常用命令</h2>
+
+<ul>
+<li>git init #此命令会在当前目录下初始化生成一个Git仓库，也就是本地仓库,默认会创建一个叫master的本地分支</li>
+<li>git status #此命令可以查看当前本地分支的状态，比如显示当前的目录下哪些文件有了改变，哪些文件已经被加入到了推送队列中</li>
+<li>git add #此命令把当前分支中的文件加入到推送队列中，可以用-A指令添加所有文件</li>
+<li>git remote add/remove/show #添加删除显示当前远程分支的状态</li>
+<li>git push -u remote local #将本地的分支推送至远端的分支上去</li>
+<li>git push -force #强制推送，比如两边分支中文件数目都不一致，就需要强制推送才能成功</li>
+</ul>
+
+<p>更加详细的命令和相关原理可一参考大作，<a href="%22http://git.oschina.net/progit%22">Pro Git</a></p>
+
+<p><img src="/img/git.jpg" alt="Git Logo"></p>
+ -->
+		  
+		  </div>
+		   <p id="subtitletrans" class="subtitlecontainer">
+		      <a class="subtitle">2015年12月16日</a>
 		      by
 		        <a class="subtitle" href="/about/">小虎</a>
 		      <!-- -->
