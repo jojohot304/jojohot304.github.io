@@ -5,7 +5,7 @@
     <atom:link href="http://xiaohu89.com/feed.xml" rel="self" type="application/rss+xml"/>
     <link>http://xiaohu89.com/</link>
     <description>used by search engines</description>
-    <pubDate>Thu, 17 Mar 2016 22:06:38 +0800</pubDate>
+    <pubDate>Thu, 17 Mar 2016 22:30:26 +0800</pubDate>
     
       <item>
         <title>一些语法记录</title>
@@ -58,6 +58,15 @@
 &lt;li&gt;IP专题，未学习，当前可供学习的材料的话也就是基础的数通原理，基本原理已经学习多次，不必再看，还是以实验室小机房为管道，学习核心网网元的各类IP路由规划和实现方式&lt;/li&gt;
 &lt;li&gt;QOS专题，这部分其实和PCC有叠加，PCC是实现QOS控制的重要手段之一，这方面材料可以从huihui哥写的总结开始着手&lt;/li&gt;
 &lt;li&gt;NFV专题，学习了一半，总结了一篇NFV基础知识的文章出来，现在已经能够掌握NFV的各种名词术语和基本含义，对于上层APP网元和MANO，继续学习材料，输出总结出来&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;过完年已经过了一个月了啦，年前规划的几个专题有有所学习：&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PCC专题，针对网设方面的知识系统的学习了一遍，对于简化SA的理解也比以前深入了一些，但是还是需要输出一篇文章出来&lt;/li&gt;
+&lt;li&gt;IP专题，小小的归纳总结了一些东西，但是其实还是没有真正掌握，现在连实验室那一堆维护网络都还没有理清除，后面需要重点抓这个&lt;/li&gt;
+&lt;li&gt;QOS专题，huihui哥总结学了一遍，基本对于数通网络中的QOS控制有了初步的理解&lt;/li&gt;
+&lt;li&gt;NFV专题，现在在知识上面算是基本入门了吧，各种概念现在还是比较清楚了，但是现在最大的问题还是没有实际上手，实验室环境仍然没有弄好，下周周末前一定要把vUSN/vUGW拉起来&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 24 Jan 2016 00:00:00 +0800</pubDate>
