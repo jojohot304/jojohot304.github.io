@@ -258,6 +258,9 @@ Git以我现在的理解就是一个分布式的版本控制系统，我现在�
 <li>git remote add/remove/show #添加删除显示当前远程分支的状态</li>
 <li>git push -u remote local #将本地的分支推送至远端的分支上去</li>
 <li>git push -force #强制推送，比如两边分支中文件数目都不一致，就需要强制推送才能成功</li>
+<li>git pull #此命令是将远程的仓库与本地的工作空间进行合并，但是是怎么来实现合并的，有冲突怎么办？</li>
+<li>git diff [local Branch] [remote repository/remote Branch] #此命令将本地的分支与远程仓库的分支进行比较，显示所有文件的改动</li>
+<li>git commit #在使用git add将文件添加到推送队列之后，还需要使用git commit命令将文件进行提交本地的工作空间，提交之后才能push至远程仓库完成更新</li>
 </ul>
 
 <p>更加详细的命令和相关原理可一参考大作，<a href="%22http://git.oschina.net/progit%22">Pro Git</a></p>
