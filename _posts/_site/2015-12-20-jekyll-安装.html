@@ -1,0 +1,60 @@
+<h1 id="jekyll">安装jekyll</h1>
+<p>=========</p>
+
+<p>发现Pelican的设置太不灵活了，比如我想自定义index页面,但是在执行make html之后，直接生成了一个默认的index，于是准备尝试一下jekyll试试。
+其实jekyll应该就算是Pelican的加强版吧，你看两者的文本编辑语法都是一样基于Markdown的，只是现在大多数人都是用jekyll的了。
+先去zhihu上面搜索了下jekyll的指南，找到了一个中文版的jekyll文档，看起来很不错呀,文档链接:jekyll.bootcss.com
+咱不管用不用，先把它装上再说吧,我果断用apt-get install jekyll下载了一个jekyll
+一运行，马上报错：</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>	<span class="n">d</span><span class="p">:</span><span class="sr">/Ruby200/</span><span class="n">lib</span><span class="o">/</span><span class="n">ruby</span><span class="o">/</span><span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="o">.</span><span class="mi">0</span><span class="o">/</span><span class="n">rubygems</span><span class="o">/</span><span class="n">core_ext</span><span class="o">/</span><span class="n">kernel_require</span><span class="p">.</span><span class="nf">rb</span><span class="p">:</span><span class="mi">45</span><span class="p">:</span><span class="k">in</span> <span class="s1">'require'</span><span class="p">:</span> <span class="n">cannot</span> <span class="nb">load</span> <span class="n">such</span> <span class="n">file</span> <span class="o">--</span> <span class="n">yajl</span><span class="o">/</span><span class="mi">2</span><span class="o">.</span><span class="mi">0</span><span class="o">/</span><span class="n">yajl</span> <span class="p">(</span><span class="no">LoadError</span><span class="p">)</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>看起来像是ruby的问题，马上用apt-get purge命令把jekyll给卸载了，去jekyll文档里面看到别人安装是用的gem install命令，这个gem看起来是ruby环境里面的安装命令;</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre>	<span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">ruby</span>
+	<span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">ruby</span><span class="o">-</span><span class="n">dev</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p>把ruby的环境装好了</p>
+
+<p>ruby-v可以看到：</p>
+
+<pre><code>root@xiaohu-Z7:/home/xiaohu/projects/myblog/github/content/article# ruby -v
+ruby 2.1.2p95 (2014-05-08) [x86_64-linux-gnu]
+</code></pre>
+
+<p>再执行gem install jekyll，报错：</p>
+
+<pre><code>ERROR: Could not find a valid gem 'jekyll' (&gt;= 0), here is why:
+Unable to download data from https://rubygems.org/ - Errno::ETIMEDOUT: Operation timed out - connect(2) (https://rubygems.org/latest_specs.4.8.gz)
+</code></pre>
+
+<p>看起来像是链接镜像服务器失败的样子</p>
+
+<pre><code>gem sources -r http://rubygems.org/
+gem sources -a http://ruby.taobao.org
+</code></pre>
+
+<p>把ruby资料的源换成了taobao的镜像，这次安装jekyll成功</p>
+
+<p>尝试运行jekyll new xxx，报错提示/usr/bin下面找不到jekyll程序，这个挺简单：</p>
+
+<pre><code>which jekyll
+export PATH=$PATH:/usr/local/bin
+</code></pre>
+
+<p>先找到了jekyll程序所在的目录，然后增加了一个环境变量;</p>
+
+<p>最后成功安装上了jekyll：</p>
+
+<pre><code>jekyll new xiaohu-site
+root@xiaohu-Z7:/home/xiaohu/blog/xiaohu-site# ls
+about.md  _config.yml  css  feed.xml  _includes  index.html  _layouts  _posts  _sass  _site
+</code></pre>
+
+<p><img src="/img/jekyll.jpg" alt="Jekyll Logo" /></p>
+
+<p>PS: 写文章的时候，可以用鼠标选中外部窗口的内容，然后回到vim中，按shift+insert（就是锁屏的那个快捷键）,就可以把外部的内容拷贝到vim里面了。</p>
+
